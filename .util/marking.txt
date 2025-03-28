@@ -4,14 +4,13 @@ rootdir: /home/runner/work/Assessment-Networking-Week-1/Assessment-Networking-We
 plugins: requests-mock-1.12.1
 collected 77 items
 
-test_postcode_cli.py FFF.FFFFFFFFFFFFFFFFFFFFF.F.....                    [ 41%]
+test_postcode_cli.py ................................                    [ 41%]
 test_postcode_functions.py ............................................. [100%]
 
-======================== 25 failed, 52 passed in 0.75s =========================
+============================== 77 passed in 5.67s ==============================
 ************* Module postcode_cli
-postcode_cli.py:7:0: C0304: Final newline missing (missing-final-newline)
-postcode_cli.py:3:0: W0611: Unused ArgumentParser imported from argparse (unused-import)
+postcode_cli.py:7:9: W0621: Redefining name 'args' from outer scope (line 42) (redefined-outer-name)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.64/10 (previous run: 9.64/10, +0.00)
+Your code has been rated at 9.87/10 (previous run: 9.87/10, +0.00)
 
