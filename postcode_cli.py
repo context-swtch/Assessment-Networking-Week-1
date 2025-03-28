@@ -4,23 +4,23 @@ from argparse import ArgumentParser
 from postcode_functions import validate_postcode, get_postcode_completions
 
 
-def main(args: ArgumentParser) -> None:
+def main(arguments: ArgumentParser) -> None:
     """The main entry point of the program."""
-    if args.mode == 'validate':
+    if arguments.mode == 'validate':
         # Attempt to validate tje postcode
-        if validate_postcode(args.postcode):
-            print(f"{args.postcode} is a valid postcode.")
+        if validate_postcode(arguments.postcode):
+            print(f"{arguments.postcode} is a valid postcode.")
         else:
-            print(f"{args.postcode} is not a valid postcode.")
+            print(f"{arguments.postcode} is not a valid postcode.")
         return
-    if args.mode == 'complete':
+    if arguments.mode == 'complete':
         # attempt to complete the postcode
-        postcodes = get_postcode_completions(args.postcode)
+        postcodes = get_postcode_completions(arguments.postcode)
         if postcodes is not None:
             for i in range(5):
                 print(postcodes[i])
         else:
-            print(f'No matches for {args.postcode}.')
+            print(f'No matches for {arguments.postcode}.')
         return
 
 
