@@ -69,7 +69,8 @@ def get_postcode_completions(postcode_start: str) -> list[str]:
     response = handle_response(res)
 
     if response['result'] is None:
-        raise ValueError("No relevant postcode found.")
+        return None
+        # raise ValueError("No relevant postcode found.")
 
     return response['result']
 
