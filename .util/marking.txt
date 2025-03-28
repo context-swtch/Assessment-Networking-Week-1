@@ -7,10 +7,8 @@ collected 77 items
 test_postcode_cli.py ................................                    [ 41%]
 test_postcode_functions.py ............................................. [100%]
 
-============================== 77 passed in 5.67s ==============================
-************* Module postcode_cli
-postcode_cli.py:7:9: W0621: Redefining name 'args' from outer scope (line 42) (redefined-outer-name)
+============================= 77 passed in 10.21s ==============================
 
-------------------------------------------------------------------
-Your code has been rated at 9.87/10 (previous run: 9.87/10, +0.00)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
